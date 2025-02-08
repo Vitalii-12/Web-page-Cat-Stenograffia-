@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+  </head>
+  <body>
+    <!--HEDER-->
+    <header class="header">
+      <div class="container">
+        <h1>Stenograffia</h1>
+      </div>
+    </header>
+    <!--/HEDER-->
+    <!--  NAVIGATION-->
+    <nav class="page-navigation">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Stenograffia.html">Stenograffia</a></li>
+        </ul>
+        <!--LOGIN FORM-->
+        <form action="#" class="login">
+          <input type="text" placeholder="Login" required />
+          <input type="password" placeholder="Password" required />
+          <input type="submit" value="Sign In" />
+        </form>
+        <!--/LOGIN FORM-->
+      </div>
+    </nav>
+    <!--  /NAVIGATION-->
+    <!--MAIN SECTION-->
+    <main>
+      <div class="container">
+        <h2>Image Collection <small>Visualize Quality</small></h2>
+        <div class="collections">
+          <div class="collection-item-outer">
+            <div class="collection-item">
+              <label for="downloadfile1">load image picture </label>
+              <canvas id="canvasik1"></canvas>
+              <input
+                type="file"
+                multiple="false"
+                accept="image/*"
+                id="downloadfile1"
+                onchange="loadImage()"
+              />
+            </div>
+          </div>
+
+          <div class="collection-item-outer">
+            <div class="collection-item">
+              <label for="downloadfile2">load image picture hide </label>
+              <canvas id="canvasik2"></canvas>
+              <input
+                type="file"
+                multiple="false"
+                accept="image/*"
+                id="downloadfile2"
+                onchange="loadImageHide()"
+              />
+            </div>
+          </div>
+          <div class="collection-item-outer">
+            <div class="collection-item">
+              <label for="">Stenograffia</label>
+              <canvas id="canvasik3"></canvas>
+              <input type="button" value="Stenograffia" onclick="Change()" />
+              <input type="button" value="unite" onclick="combine()" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--/MAIN SECTION-->
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright Example code 2024</p>
+      </div>
+    </footer>
+    <!--/FOOTER-->
+  </body>
+</html>
